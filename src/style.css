@@ -1,0 +1,1384 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(179.34deg, rgba(193, 227, 211, 0.52) 0.57%, rgba(245, 248, 252, 0.45) 19.85%),
+        linear-gradient(0deg, #FBF3E5, #FBF3E5);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.mynavbrand {
+    width: 25%;
+}
+
+.mynav a {
+    margin: 15px;
+    font-weight: bold !important;
+    font-size: 18px;
+}
+
+.mynav a:hover {
+    color: #47D18C;
+}
+
+.active {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s ease;
+    justify-content: stretch;
+    z-index: 40;
+}
+
+.hidden {
+    width: 100%;
+    z-index: 40;
+    position: fixed;
+    top: -80px;
+    transition: 0.3s ease;
+
+}
+
+.dropbtn {
+    border: none;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: grey;
+    text-decoration: none;
+    display: block !important;
+    font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 15px;
+
+}
+
+.dropdown-content a:hover {
+    color: #47D18C;
+}
+
+.loginIcon span {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.jobBtn {
+    border-radius: 12px;
+    background: white;
+    color: grey;
+    padding: 5px 15px;
+    transition: padding ease 1s;
+}
+
+.jobBtn:hover {
+    padding: 5px 25px;
+}
+
+.jb2 {
+    color: white;
+    background: #3D425A;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .mynav a {
+        font-size: 15px;
+    }
+
+    .jobBtn {
+        position: relative;
+        top: 3px;
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+
+    .loginIcon span {
+        position: relative;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .mynav a {
+        font-size: 12px;
+    }
+
+    .logIcon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .jobBtn:hover {
+        font-size: 10px;
+        padding: 4px 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dropbtn {
+        box-shadow: none;
+        width: 50%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        position: relative;
+        width: 20%;
+    }
+}
+
+
+/* home page */
+
+/* home body 2 */
+
+.homeCont {
+    position: relative;
+    top: 150px;
+}
+
+.firstrow h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.firstrow p {
+    margin-top: 20px;
+    width: 70%;
+    font-size: 18px;
+}
+
+.firstBgImg {
+    background-image: url('./Images/firstBgImg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: auto;
+    top: -50px;
+}
+
+.firstBgImg .img1 {
+    width: 35%;
+    border: 6px solid rgb(215, 226, 213);
+    padding: 5px;
+    border-radius: 300px;
+    position: relative;
+    left: 10%;
+}
+
+.firstBgImg .img2 {
+    width: 45%;
+    border: 6px solid rgb(215, 226, 213);
+    padding: 5px;
+    border-radius: 300px;
+    position: relative;
+    top: 20px;
+    left: -35%;
+}
+
+.firstBgImg .img3 {
+    position: relative;
+    top: -350px;
+    width: 100%;
+}
+
+.firstrow button {
+    padding: 5px 25px;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.hireBtn {
+    background: #3D425A;
+    color: white;
+}
+
+.postBtn {
+    background: white;
+    color: #3D425A;
+}
+
+@media only screen and (max-width: 1200px) {
+    .firstrow h1 {
+        font-size: 40px;
+    }
+
+    .firstrow p {
+        font-size: 15px;
+    }
+
+    .firstBgImg .img3 {
+        top: -280px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .active,
+    .hidden {
+        position: relative;
+    }
+
+    .homeCont {
+        margin-top: -100px;
+    }
+
+    .firstBgImg .img3 {
+        top: -200px;
+    }
+
+    .firstrow h1 {
+        font-size: 30px
+    }
+
+    .firstrow p {
+        font-size: 13px;
+    }
+
+    .firstrow button {
+        font-size: 10px;
+    }
+
+    .firstrow .icons {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .firstrow .col-md-5 {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .firstBgImg {
+        text-align: center;
+    }
+
+    .firstrow .img1 {
+        width: 25%;
+        left: -90px;
+        top: 50px;
+    }
+
+    .firstrow .img2 {
+        width: 35%;
+        top: 80px;
+    }
+
+    .firstrow .img3 {
+        width: 85%;
+        left: 20px;
+    }
+
+    .firstBgImg .img1,
+    .img2 {
+        border: 4px solid #dfecdd !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .firstrow .col-md-5 {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .firstrow .img1 {
+        width: 25%;
+        left: -70px;
+        top: 50px;
+    }
+
+    .firstrow .img2 {
+        width: 35%;
+        top: 80px;
+    }
+
+    .firstrow .img3 {
+        width: 85%;
+        left: 20px;
+        top: -100px;
+    }
+
+    .firstBgImg .img1,
+    .img2 {
+        border: 2px solid #dfecdd !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .firstrow .img3 {
+        left: 20px;
+        top: -80px;
+    }
+}
+
+
+/* home body 2 */
+
+
+.easyPeasy {
+    margin-top: -40%;
+    text-align: center;
+}
+
+.easyPeasy h1 {
+    width: 60%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-family: Readex Pro;
+    font-weight: bold;
+}
+
+.easyPeasy p {
+    font-family: Readex Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 30%;
+    margin: 50px auto !important;
+}
+
+.easyPeasyRow .card {
+    border-radius: 30px;
+    height: 30vmax;
+}
+
+
+
+.easyPeasyRow .card:hover {
+    background: #3D425A;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.easyPeasyRow h3,
+p:last-child {
+    font-family: Readex Pro !important;
+    margin: 20px;
+}
+
+.easyPeasyRow h3 {
+    font-weight: bold;
+}
+
+.easyPeasyRow .kk {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3D425A;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.easyPeasyRow .card:hover .kk {
+    background: white;
+    color: #3D425A;
+}
+
+.easyPeasyRow p {
+    position: relative;
+    top: -10px;
+    left: -1px;
+}
+
+.easyPeasyRow .cr2 {
+    margin-top: 50px;
+}
+
+.easyPeasyRow .cr3 {
+    margin-top: 100px;
+}
+
+.easyPeasyRow .card h3 {
+    margin-top: 40% !important;
+}
+
+@media only screen and (max-width: 1300px) {
+    .easyPeasyRow .card {
+        height: 32vmax;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .easyPeasy h1 {
+        font-size: 40px;
+    }
+
+    .easyPeasy p {
+        font-size: 16px;
+    }
+
+    .easyPeasyRow .card {
+        margin: 0 !important;
+    }
+
+    .easyPeasyRow .card h3 {
+        font-size: 22px;
+        margin-top: 35%;
+    }
+
+    .easyPeasyRow .kk {
+        width: 30px;
+        height: 30px;
+    }
+
+    .easyPeasyRow .kk p {
+        top: -18px;
+        left: -10px;
+    }
+
+    .easyPeasyRow .card p:last-child {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .easyPeasy h1 {
+        font-size: 30px;
+    }
+
+    .easyPeasyRow .col-md-4 {
+        width: 50%;
+    }
+
+    .easyPeasyRow .cr2 {
+        margin-top: 180px;
+    }
+
+    .easyPeasyRow .cr3 {
+        margin-top: -120px;
+    }
+
+    .easyPeasyRow .card h3 {
+        font-size: 18px;
+        margin-top: 35%;
+    }
+
+    .easyPeasyRow .card p:last-child {
+        font-size: 13px;
+    }
+
+    .easyPeasyRow .kk p {
+        top: -16px;
+    }
+
+    .easyPeasyRow .card {
+        height: 40vmax;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .easyPeasy h1 {
+        font-size: 25px;
+    }
+
+    .easyPeasy p {
+        font-size: 14px;
+        width: 48%;
+    }
+
+    .easyPeasyRow .card h3 {
+        font-size: 16px;
+    }
+
+    .easyPeasyRow .card p:last-child {
+        font-size: 10px;
+    }
+
+    .easyPeasyRow .card {
+        height: 40vmax;
+    }
+
+    .easyPeasyRow .kk {
+        width: 25px;
+        height: 25px;
+    }
+
+    .easyPeasyRow .kk p {
+        left: -11.5px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .easyPeasyRow .card {
+        height: 45vmax;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .easyPeasyRow .card {
+        height: 50vmax;
+    }
+
+    .easyPeasyRow .kk p {
+        font-size: 10px !important;
+        top: -16px;
+        left: -11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .easyPeasyRow .card h3 {
+        font-size: 14px;
+    }
+
+    .easyPeasyRow .card p:last-child {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .easyPeasyRow .card {
+        height: 45vmax;
+    }
+
+    .easyPeasyRow .card h3 {
+        font-size: 12px;
+    }
+
+    .easyPeasyRow .card p:last-child {
+        font-size: 6px;
+    }
+}
+
+/* home body 3 */
+.platform {
+    margin-top: 100px;
+    background: rgb(177, 223, 201);
+    border-radius: 20px;
+    background-image: url('./Images/Union.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10%;
+    font-family: Readex Pro;
+}
+
+.platform .col-md-8 {
+    position: relative;
+    left: 12.3%;
+}
+
+.platform h1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.getBtn {
+    background: #3D425A;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 8px 24px;
+}
+
+.webImg {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .platform h1 {
+        font-size: 32px;
+    }
+
+    .getBtn,
+    .platform p {
+        font-size: 14px;
+    }
+
+    .iconPlatform {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .iconPlatform {
+        position: relative;
+        width: 60px;
+    }
+
+    .platform h1 {
+        font-size: 28px;
+    }
+
+    .getBtn,
+    .platform p {
+        font-size: 12px;
+    }
+
+    .getBtn {
+        padding: 5px 20px;
+        position: relative;
+        top: -30px;
+    }
+
+    .platform .arrowiconPlatform {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .platform {
+        height: 80vmax;
+    }
+
+    .platform .col-md-4 {
+        width: 100%;
+    }
+
+    .platform h1 {
+        position: relative;
+        top: -125px;
+        left: 80px;
+        width: 50%;
+        font-size: 25px;
+    }
+
+    .platform p {
+        position: relative;
+        top: -150px;
+        width: 65%;
+    }
+
+    .platform .getBtn {
+        position: relative;
+        top: -170px;
+    }
+
+    .platform .webImg {
+        position: relative;
+        top: -180px;
+        left: 192px;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .platform {
+        height: 100vmax;
+    }
+
+    .platform h1 {
+        position: relative;
+        top: -125px;
+        width: 45%;
+        font-size: 20px;
+    }
+
+    .platform p {
+        position: relative;
+        top: -150px;
+        width: 65%;
+    }
+
+    .platform .webImg {
+        position: relative;
+        top: -120px;
+        left: 81px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .platform {
+        height: 120vmax;
+    }
+
+    .platform .webImg {
+        position: relative;
+        top: -120px;
+        width: 60%;
+        left: 163px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .platform {
+        height: 120vmax;
+    }
+
+    .platform .iconPlatform {
+        width: 45px;
+        height: 45px;
+    }
+
+    .platform h1 {
+        font-size: 18px;
+        top: -90px;
+    }
+
+    .platform .webImg {
+        position: relative;
+        top: -20px;
+        left: 145px;
+        width: 65%;
+    }
+
+    .platform p {
+        top: -100px;
+    }
+
+    .getBtn {
+        font-size: 10px;
+        top: -120px !important;
+    }
+}
+
+@media only screen and (max-width: 548px) {
+    body {
+        overflow-wrap: hidden;
+    }
+
+    .platform .webImg {
+        left: 135px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .platform .webImg {
+        left: 125px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .platform .webImg {
+        left: 110px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .platform .webImg {
+        left: 100px;
+    }
+}
+
+
+/* home body 4 */
+
+.opportunities {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+.opportunities .textDiv h1 {
+    font: Readex Pro;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.opportunitiesRow .card {
+    margin-top: 80px;
+    border: none;
+    border-radius: 20px;
+    height: 25vmax;
+}
+
+.opportunitiesRow img {
+    width: 50px;
+    height: 50px;
+}
+
+.opportunitiesRow img,
+h3,
+p {
+    margin: 20px !important;
+}
+
+.opportunitiesRow h3 {
+    margin-top: 100px !important;
+    text-transform: capitalize;
+    font-family: Readex Pro;
+    font-weight: bold;
+}
+
+.opportunitiesRow .cr1 {
+    position: relative;
+    top: 0px;
+    transition: all 1.5s ease-in;
+    transition-duration: 1.2s;
+}
+
+.opportunitiesRow .cr2 {
+    position: relative;
+    top: 80px;
+    transition: all 1.5s ease-in;
+    transition-duration: 1.2s;
+}
+
+.opportunitiesRow .cr1:hover {
+    position: relative;
+    top: 80px;
+    transition: all 1.5s ease-in;
+    transition-duration: 1.2s;
+}
+
+.opportunitiesRow .cr2:hover {
+    position: relative;
+    top: 0px;
+    transition: all 1.5s ease;
+    transition-duration: 1.2s;
+}
+
+@media only screen and (max-width: 1400px) {
+    .opportunities .textDiv h1 {
+        font-size: 42px;
+    }
+
+    .opportunitiesRow .card {
+        height: 27vmax;
+    }
+
+    .opportunitiesRow img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .opportunitiesRow h3 {
+        font-size: 25px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .opportunities .textDiv h1 {
+        font-size: 38px;
+    }
+
+    .opportunitiesRow .card {
+        height: 30vmax;
+    }
+
+    .opportunitiesRow h3 {
+        font-size: 22px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 992.9px) {
+    .opportunities .textDiv h1 {
+        font-size: 38px;
+    }
+
+    .opportunitiesRow .col-md-3 {
+        width: 50%;
+    }
+
+    .opportunitiesRow h3 {
+        position: relative;
+        top: -50px;
+        font-size: 25px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 15px;
+        position: relative;
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .opportunitiesRow .card {
+        height: 32vmax;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .opportunitiesRow .card {
+        height: 35vmax;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .opportunitiesRow .card {
+        height: 38vmax;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .opportunities .textDiv h1 {
+        font-size: 30px;
+    }
+
+    .opportunities .textDiv p {
+        font-size: 14px;
+    }
+
+    .opportunitiesRow h3 {
+        font-size: 20px;
+    }
+
+    .opportunitiesRow img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    .opportunitiesRow .card {
+        height: 40vmax;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .opportunities .textDiv h1 {
+        font-size: 22px;
+    }
+
+    .opportunities .textDiv p {
+        font-size: 12px;
+    }
+
+    .opportunitiesRow h3 {
+        font-size: 18px;
+    }
+
+    .opportunitiesRow img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .opportunitiesRow h3 {
+        font-size: 16px;
+    }
+
+    .opportunitiesRow img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .opportunitiesRow p {
+        font-size: 10px;
+    }
+}
+
+/* home body 5 */
+
+.partners {
+    margin-top: 20%;
+}
+
+.partners h1 {
+    text-transform: uppercase;
+    width: 60%;
+    font-family: Readex Pro;
+    font-weight: 600;
+}
+
+.myCaruselDiv {
+    margin-top: 10%;
+}
+
+.carousel-item .card {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    background: rgb(248, 245, 239);
+    border: 2px solid rgb(213, 216, 223);
+    color: black;
+}
+
+.carousel-item .card:hover {
+    background: white;
+}
+
+.carousel-item .caruselIcon {
+    margin: 30px;
+}
+
+.carousel-item .card p {
+    margin: 30px !important;
+}
+
+.brendsRow {
+    margin-top: 80px !important;
+}
+
+.brendsRow .rakutenIcon,
+.amazonIcon {
+    position: relative;
+    top: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .carousel-item .card .caruselIcon {
+        width: 150px;
+    }
+
+    .carousel-item .card p {
+        font-size: 16px;
+    }
+
+    .carousel-item .card {
+        width: 100%;
+    }
+
+    .partners h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .carousel-item .card .caruselIcon {
+        width: 100px;
+    }
+
+    .carousel-item .card p {
+        font-size: 14px;
+    }
+
+    .partners h1 {
+        font-size: 28px;
+    }
+
+    .partners h6 {
+        font-size: 14px;
+    }
+
+    .brendsRow .brendIcons,
+    .rakutenIcon,
+    .amazonIcon {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 992.9px) {
+    .carousel-item .card .caruselIcon {
+        width: 70px !important;
+        margin: 0;
+        position: relative;
+        left: 30px;
+        top: 15px;
+    }
+
+    .carousel-item .card p {
+        font-size: 10px;
+    }
+
+    .carousel-item .card {
+        height: 300px;
+    }
+
+    .partners h1 {
+        font-size: 22px;
+    }
+
+    .partners h6 {
+        font-size: 12px;
+    }
+
+    .brendsRow .brendIcons,
+    .rakutenIcon,
+    .amazonIcon {
+        width: 70px !important;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .carousel-item .col-md-4 {
+        width: 100%;
+    }
+
+    .carousel-item .card {
+        height: 250px;
+        margin-bottom: 20px !important;
+    }
+
+    .partners h1 {
+        position: relative;
+        top: 20px;
+        font-size: 22px;
+    }
+
+    .partners h6 {
+        font-size: 10px;
+        width: 40%;
+        position: relative;
+        top: -35px;
+        left: 56%;
+    }
+
+    .brendsRow .brendIcons,
+    .rakutenIcon,
+    .amazonIcon {
+        width: 70px !important;
+    }
+
+    .brendsRow .col-md-2 {
+        width: 33%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .partners h1 {
+        font-size: 18px !important;
+        width: 50%;
+    }
+
+    .partners h6 {
+        top: -25px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .partners h1 {
+        font-size: 17px !important;
+        top: 25px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .partners h1 {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .partners h1 {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 396px) {
+    .partners h1 {
+        font-size: 14px !important;
+    }
+
+    .partners h6 {
+        font-size: 8px;
+        top: -15px;
+    }
+}
+
+.dreamDiv {
+    position: relative;
+    top: 50px;
+    background: #b6daff;
+    border-radius: 20px;
+    font: Readex Pro;
+    height: 400px;
+}
+
+.dreamDiv h1 {
+    margin-top: 100px;
+    color: #2D2D2D;
+    font-weight: bold;
+    width: 40%;
+}
+
+.dreamDiv h1,
+.getBtn {
+    margin-left: 15%;
+}
+
+.dreamDiv .getBtn {
+    margin-top: 5% !important;
+}
+
+.dreamDiv .col-md-4 img {
+    position: relative;
+    left: -100px;
+    top: 19px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .dreamDiv h1 {
+        font-size: 35px;
+        margin-top: 120px;
+    }
+
+    .dreamDiv .col-md-4 img {
+        top: 74px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .dreamDiv {
+        height: 350px;
+    }
+
+    .dreamDiv h1 {
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .dreamDiv .col-md-4 img {
+        top: 79px;
+    }
+}
+
+@media only screen and (max-width: 992.9px) {
+    .dreamDiv {
+        height: 277px
+    }
+
+    .dreamDiv h1 {
+        font-size: 22px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .dreamDiv .getBtn {
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+
+    .dreamDiv .getBtn .arrowiconPlatform {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 767.9px) {
+    .dreamDiv {
+        height: 470px;
+    }
+
+    .dreamDiv .col-md-4 img {
+        width: 50% !important;
+        left: 150px;
+        top: -20px;
+    }
+
+    .dreamDiv .getBtn {
+        padding: 5px 15px;
+        font-size: 8px;
+    }
+
+    .dreamDiv .getBtn .arrowiconPlatform {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .dreamDiv h1 {
+        font-size: 18px;
+        width: 35%;
+    }
+
+    .dreamDiv .col-md-4 img {
+        top: -40px;
+    }
+
+    .dreamDiv .getBtn {
+        position: relative;
+        font-size: 6px;
+        top: -30px !important;
+        padding: 3px 12px;
+    }
+
+    .dreamDiv .getBtn .arrowiconPlatform {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 515px) {
+    .dreamDiv {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .dreamDiv {
+        height: 425px;
+    }
+}
+
+.footerDiv {
+    margin-top: 20%;
+    background: #eee8dd;
+    border-radius: 20px 20px 0 0;
+    padding: 10%;
+    font: Readex Pro;
+
+}
+
+.footerDiv .col-md-8 .col-md-4 p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.footerIcon {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.footerDiv p {
+    color: grey;
+}
+
+.foterDrpBut {
+    border: none;
+    background: #eee8dd;
+}
+
+/* .footerDiv .dropdown-menu{
+    position: relative;
+    left: 60px !important;
+    top: -40px !important;
+} */
+
+.footerDiv a{
+    text-decoration: none;
+    color: grey;
+}
+.footerDiv p:hover, a:hover{
+    color: #47D18C !important;
+}
